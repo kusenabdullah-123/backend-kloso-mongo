@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "anggotas",
+  "info": {
+    "name": "anggota"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "angkatan": {
+      "type": "string"
+    },
+    "jurusan": {
+      "type": "string"
+    },
+    "jenisKelamin": {
+      "type": "string"
+    },
+    "alasan": {
+      "type": "richtext"
+    },
+    "foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

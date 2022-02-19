@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/anggotas",
+      "handler": "anggota.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/anggotas/count",
+      "handler": "anggota.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/anggotas/:id",
+      "handler": "anggota.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/anggotas",
+      "handler": "anggota.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/anggotas/:id",
+      "handler": "anggota.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/anggotas/:id",
+      "handler": "anggota.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

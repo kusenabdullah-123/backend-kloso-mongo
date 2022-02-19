@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prokers",
+  "info": {
+    "name": "proker"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "icon": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    }
+  }
+}
