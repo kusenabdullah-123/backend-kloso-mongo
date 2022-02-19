@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "anggotas",
   "info": {
-    "name": "anggota"
+    "name": "anggota",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -37,6 +38,11 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "user_id": {
+      "via": "anggota_id",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
